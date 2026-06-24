@@ -44,8 +44,9 @@ function Weld.new(rootPart, targetPart)
 		Target = targetPart,
 		
 		C0 = CFrameModule.identity, 
-		C1 = targetCF:Inverse() * rootCF,                 
-		Transform = CFrameModule.identity
+		C1 = CFrameModule.identity,
+		--if you want your welds to stay in position of where you placed it, 
+		-- replace the 48th line with: targetCF:Inverse() * rootCF  
 	}, Weld)
 	
 	table.insert(activeMotors, self)
