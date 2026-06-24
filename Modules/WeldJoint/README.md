@@ -4,6 +4,9 @@ A module designed to replicate how weld joints act on rblx.
 
 > :warning: This module can only run IF you have GplateGummy's CFrame Module, here is the module: https://github.com/GplateGummy/Polytoria-CFrameModule/tree/main Put it in ScriptService.
 
+> :warning: This module Does not work well with unanchored parts unfortunately. It is possible however it is not stable to be used at all.
+
+
 ## API
 `.New(Part0:Part, Part1:Part)`  
 Returns a new weld between Part0 and Part1.
