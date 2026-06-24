@@ -24,8 +24,8 @@ local Weld = require(ScriptService["WeldJoints"])
 local CFrame = require(ScriptService["CFrame"})
 local root = script.Parent["Root"]
 local target = script.Parent["Target"]
-
+--make the weld
 local Joint = Weld.new(root, target)
-
-Weld.C0 = CFrame.New(0,1,0)
+--modifies C0
+Joint.C0 = CFrame.New(0,1,0)
 ```
