@@ -8,7 +8,7 @@ Weld.__index = Weld
 
 local activeMotors = {}
 
--- rendering update loop
+-- Rendering update loop
 local function updateMotors(dt)
 	for _, motor in ipairs(activeMotors) do
 		local root = motor.Root
@@ -45,8 +45,8 @@ function Weld.new(rootPart, targetPart)
 		
 		C0 = CFrameModule.identity, 
 		C1 = CFrameModule.identity,
-		--if you want your welds to stay in position of where you placed it, 
-		-- replace the 48th line with: targetCF:Inverse() * rootCF  
+		-- If you want your welds to stay in position of where you placed it, 
+		-- Replace the 48th line with: targetCF:Inverse() * rootCF  
 	}, Weld)
 	
 	table.insert(activeMotors, self)
