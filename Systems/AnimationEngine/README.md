@@ -29,7 +29,7 @@ engine:CrossFade("DanceTest2", 5, 1)
 ```
 
 
-However, to set this up (Put all this on ScriptService):
+and, to set this up (Put all this on ScriptService):
 <pre style="white-space: pre; overflow-x: auto; word-wrap: normal;">
 <a href="https://github.com/RobertStevey/Polytoria/blob/main/Systems/RigSystem/init.luau">RigSystem.luau</a>
 <a href="https://github.com/RobertStevey/Polytoria/blob/main/Modules/AnimatableJoint/AnimatableJoint.luau">AnimatableJoint.luau</a>
