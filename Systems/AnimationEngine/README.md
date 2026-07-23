@@ -4,7 +4,7 @@ Documentation isn't ready yet, but for a basic animation:
 
 ```luau
 local Rig           = require(ScriptService["RigSystem"])
-local HumanoidFormat = require(script["RigFormatR6"])
+local HumanoidFormat = require(script["RigFormatR6"]) --PLEASE read the RigSystem under the Systems folder.
 local AnimationEngine = require(ScriptService["AnimationEngine"])
 
 local myRig = Rig.New(script.Parent, HumanoidFormat)
