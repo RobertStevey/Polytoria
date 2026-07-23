@@ -1,18 +1,18 @@
+Documentation isn't ready yet. However, to set this up (Put all this on ScriptService):
 <pre style="white-space: pre; overflow-x: auto; word-wrap: normal;">
-Documentation isn't ready yet. However, to set this up:
+<a href="https://github.com/RobertStevey/Polytoria/blob/main/Systems/RigSystem/init.luau">RigSystem.luau</a>
+<a href="https://github.com/RobertStevey/Polytoria/blob/main/Modules/AnimatableJoint/AnimatableJoint.luau">AnimatableJoint.luau</a>
+<a href="https://github.com/GplateGummy/Polytoria-CFrameModule/blob/main/Source.lua">CFrame.luau</a>
 
 init.luau (Rename to AnimationEngine)
-|— Dependencies
+|— Dependencies (Folder)
 |  |— CFrameInterpolator.luau
 |  |— BezierEasing.luau
 |  |— CFrameLerp.luau
 |  |— Easing.luau
 |
-|— AnimationDependencies
+|— AnimationDependencies (Folder)
    |— AnimationClip.luau
    |— AnimationTracks.luau
    |— Croosfade.luau
-
-[RigSystem.luau](https://github.com/RobertStevey/Polytoria/blob/main/Systems/RigSystem/init.luau)
-[AnimatableJoint.luau](https://github.com/RobertStevey/Polytoria/blob/main/Modules/AnimatableJoint/AnimatableJoint.luau)
 </pre>
