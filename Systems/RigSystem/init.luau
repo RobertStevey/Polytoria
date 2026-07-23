@@ -1,5 +1,5 @@
 -- Rig.lua
-local Motor6D       = require(game.ScriptService["CustomJoints"])
+local Motor6D       = require(game.ScriptService["AnimatableJoints"])
 local CFrameModule  = require(game.ScriptService["CFrame"])
 
 local function TableToCFrame(t)
