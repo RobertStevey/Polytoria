@@ -1,3 +1,5 @@
+Credits to wes-ban for creating the original system on lua for roblox: https://github.com/wes-BAN/crux-animation
+
 HEADS UP, THIS IS NOT READY FOR GAMES AND MASSIVE CHANGES ARE GOING TO COME (possibly with no backwards compatibility but i will try to have it)
 
 Documentation isn't ready yet, but for a basic animation:
