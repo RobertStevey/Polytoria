@@ -16,7 +16,6 @@ function Crossfade.new(start, goal, duration)
 end
 
 function Crossfade:SetGoal(newGoal, duration)
-	-- Fixed: Ensure GetValue() is called before overwriting _StartTime
 	self._Start = self:GetValue() 
 	self._Goal = newGoal
 	self._StartTime = os.clock()
