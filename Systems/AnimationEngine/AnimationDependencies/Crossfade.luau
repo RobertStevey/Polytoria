@@ -7,7 +7,7 @@ Crossfade.__index = Crossfade
 
 function Crossfade.new(start, goal, duration)
 	local this = {}
-	this._StartTime = os.clock() -- Fixed: Unified to os.clock()
+	this._StartTime = os.clock()
 	this._Duration = duration
 	this._Start = start
 	this._Goal = goal
@@ -19,7 +19,7 @@ function Crossfade:SetGoal(newGoal, duration)
 	-- Fixed: Ensure GetValue() is called before overwriting _StartTime
 	self._Start = self:GetValue() 
 	self._Goal = newGoal
-	self._StartTime = os.clock() -- Fixed: Unified to os.clock()
+	self._StartTime = os.clock()
 	self._Duration = duration
 end
 
@@ -29,11 +29,11 @@ function Crossfade:GetValue()
 		return self._Goal, true
 	end
 	
-	-- Fixed: Unified to os.clock()
+
 	local progress = math.clamp((os.clock() - self._StartTime) / self._Duration, 0, 1)
 	local value = lerp(self._Start, self._Goal, progress)
 	
-	return value, progress >= 1 -- Fixed: Cleaner way to check completion
+	return value, progress >= 1 
 end
 
 function Crossfade:IsComplete()
